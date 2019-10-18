@@ -1,6 +1,6 @@
 <?php
 
-namespace AVKluchko\ApiPlatformExtensionBundle\Filter;
+namespace AVKluchko\ApiPlatformExtensions\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\AbstractContextAwareFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;

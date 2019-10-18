@@ -1,6 +1,6 @@
 <?php
 
-namespace AVKluchko\ApiPlatformExtensionBundle\Serializer;
+namespace AVKluchko\ApiPlatformExtensions\Serializer;
 
 use ApiPlatform\Core\Serializer\SerializerContextBuilderInterface;
 use Symfony\Component\HttpFoundation\Request;
