@@ -1,5 +1,5 @@
 {
-    "name": "avkluchko/api-platform-extension-bundle",
+    "name": "avkluchko/api-platform-extensions",
     "description": "Extensions for ApiPlatform",
     "type": "symfony-bundle",
     "license": "MIT",
