@@ -21,5 +21,5 @@ composer require avkluchko/api-platform-extensions
 ```
 
 If you're *not* using Symfony Flex, you'll also
-need to enable the `AVKluchko\X509Bundle\X509Bundle`
+need to enable the `AVKluchko\ApiPlatformExtensions\ApiPlatformExtensionsBundle`
 in your `AppKernel.php` file.
