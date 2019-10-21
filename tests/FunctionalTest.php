@@ -5,6 +5,7 @@ namespace AVKluchko\ApiPlatformExtensions\Tests;
 use AVKluchko\ApiPlatformExtensions\ApiPlatformExtensionsBundle;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Kernel;
 
 class FunctionalTest extends TestCase
@@ -14,6 +15,8 @@ class FunctionalTest extends TestCase
         $kernel = new ApiPlatformExtensionsKernel();
         $kernel->boot();
         $container = $kernel->getContainer();
+        
+        $this->assertInstanceOf(ContainerInterface::class, $container);
     }
 }
 
