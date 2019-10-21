@@ -15,7 +15,7 @@ class FunctionalTest extends TestCase
         $kernel = new ApiPlatformExtensionsKernel();
         $kernel->boot();
         $container = $kernel->getContainer();
-        
+
         $this->assertInstanceOf(ContainerInterface::class, $container);
     }
 }

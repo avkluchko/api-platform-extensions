@@ -23,3 +23,12 @@ composer require avkluchko/api-platform-extensions
 If you're *not* using Symfony Flex, you'll also
 need to enable the `AVKluchko\ApiPlatformExtensions\ApiPlatformExtensionsBundle`
 in your `AppKernel.php` file.
+
+AdminGroupsContextBuilder needs to auto adding groups "admin:read" and "admin:write" to serialization process. 
+To enable AdminGroupsContextBuilder add to config/service.yaml:
+
+```yaml
+AVKluchko\ApiPlatformExtensionBundle\Serializer\AdminGroupsContextBuilder:
+    decorates: 'api_platform.serializer.context_builder'
+    arguments: [ '@AVKluchko\ApiPlatformExtensionBundle\Serializer\AdminGroupsContextBuilder.inner']
+```
