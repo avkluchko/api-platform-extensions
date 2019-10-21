@@ -15,7 +15,8 @@
         "symfony/dependency-injection": "^3.4 || ^4.0",
         "symfony/http-kernel": "^3.4 || ^4.0",
         "api-platform/core": "^2.5",
-        "doctrine/orm": "^2.6"
+        "doctrine/orm": "^2.6",
+        "symfony/security-core": "^4.3"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^4.3"

@@ -14,12 +14,6 @@ class FunctionalTest extends TestCase
         $kernel = new ApiPlatformExtensionsKernel();
         $kernel->boot();
         $container = $kernel->getContainer();
-
-//        $reader = $container->get('avkluchko_x509.certificate_reader');
-//        $this->assertInstanceOf(CertificateReader::class, $reader);
-//
-//        $parser = $container->get('avkluchko_x509.parser');
-//        $this->assertInstanceOf(Parser::class, $parser);
     }
 }
 
