@@ -10,13 +10,13 @@ use Symfony\Component\HttpKernel\Kernel;
 
 class FunctionalTest extends TestCase
 {
-    public function testServiceWiring()
+    public function testServiceWiring(): void
     {
         $kernel = new ApiPlatformExtensionsKernel();
         $kernel->boot();
         $container = $kernel->getContainer();
 
-        $this->assertInstanceOf(ContainerInterface::class, $container);
+        self::assertInstanceOf(ContainerInterface::class, $container);
     }
 }
 
@@ -27,18 +27,18 @@ class ApiPlatformExtensionsKernel extends Kernel
         parent::__construct('test', true);
     }
 
-    public function registerBundles()
+    public function registerBundles(): array
     {
         return [
             new ApiPlatformExtensionsBundle(),
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
     }
 
-    public function getCacheDir()
+    public function getCacheDir(): string
     {
         return __DIR__ . '/cache/' . spl_object_hash($this);
     }
